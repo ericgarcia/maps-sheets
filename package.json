@@ -1,0 +1,25 @@
+{
+  "name": "maps-sheets",
+  "version": "1.0.0",
+  "description": "Convert Google Maps and Sheets",
+  "main": "kml2csv.js",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "jsdom": "^3.1.2",
+    "togeojson": "^0.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericgarcia/maps-sheets.git"
+  },
+  "author": "Eric Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericgarcia/maps-sheets/issues"
+  },
+  "homepage": "https://github.com/ericgarcia/maps-sheets"
+}
