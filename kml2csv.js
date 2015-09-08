@@ -4,9 +4,12 @@ var _  = require('lodash');
 // node doesn't have xml parsing or a dom. use jsdom
 var jsdom = require('jsdom').jsdom;
 
+var filenameKml = process.argv[2]; //i.e. Leads.kml
+var filenameTsv = filenameKml.split('.')[0]+'.tsv'
+
 var header = ['name','contact','email','website','country','ambassador','location'];
 
-var rawKml      = fs.readFileSync('Leads.kml', 'utf8');
+var rawKml      = fs.readFileSync(filenameKml, 'utf8');
 var converted   = tj.kml(jsdom(rawKml));
 
 var properties  = _.pluck(converted.features,'properties');
@@ -21,4 +24,4 @@ _.forEach(properties, function (props,i) {
   output += line.join('\t')+'\n';
 })
 
-fs.writeFileSync("Leads.tsv", output);
+fs.writeFileSync(filenameTsv, output);
