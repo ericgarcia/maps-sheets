@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ericgarcia/maps-sheets.git"
+    "url": "github.com/ericgarcia/maps-sheets.git"
   },
   "author": "Eric Garcia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ericgarcia/maps-sheets/issues"
+    "url": "github.com/ericgarcia/maps-sheets/issues"
   },
-  "homepage": "https://github.com/ericgarcia/maps-sheets"
+  "homepage": "github.com/ericgarcia/maps-sheets"
 }
